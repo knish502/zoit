@@ -11,4 +11,3 @@ cd $loc
 sudo mv gpubot /usr/bin/
 mkdir ~/PythonProjects
 mv bot.py ~/PythonProjects
-x
