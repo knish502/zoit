@@ -48,7 +48,7 @@ class Bot:
   echo ''' + self.url + '''
   echo Sincerely,
   echo The Kyle Best Buy Bot
-} | ssmtp ''' + self.email
+} | mail ''' + self.email
         
         myfile = open(filename, "w")
         myfile.write(message)
