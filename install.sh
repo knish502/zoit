@@ -13,10 +13,9 @@ mkdir ~/PythonProjects
 mv bot.py ~/PythonProjects
 
 # TODO:
-#   set up SSMTP and EPEL-Release in a secure way
+#   set up SSMTP in a secure way
 #   add Geckodriver to PATH
 
-# see the following to set up ssmtp and epel-release
+# see the following to set up ssmtp
 # guides are for CENTOS but Ubuntu instructions are similar
-# https://www.linuxcnf.com/2018/03/how-to-install-epel-repository-on.html
 # https://www.linuxcnf.com/2018/11/how-to-install-and-configure-ssmtp-in.html
