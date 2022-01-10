@@ -1,6 +1,6 @@
 #!/bin/bash
 loc=$(pwd)
-sudo apt install python3 python3-pip firefox ssmtp -y
+sudo apt install python3 python3-pip firefox ssmtp epel-release -y
 pip3 install selenium==4.0.0
 tar xzvf geckodriver*
 mkdir ~/geckodriver
@@ -11,6 +11,10 @@ cd $loc
 sudo mv gpubot /usr/bin/
 mkdir ~/PythonProjects
 mv bot.py ~/PythonProjects
+
+# TODO:
+#   set up SSMTP and EPEL-Release in a secure way
+#   add Geckodriver to PATH
 
 # see the following to set up ssmtp and epel-release
 # guides are for CENTOS but Ubuntu instructions are similar
