@@ -3,5 +3,5 @@
 cd ~/PythonProjects
 while true; do
 	python3 bot.py
-	sleep 5
+	sleep 1
 done
