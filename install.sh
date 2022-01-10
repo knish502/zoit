@@ -20,3 +20,6 @@ mv bot.py $HOME/PythonProjects
 # see the following to set up ssmtp
 # https://www.linuxcnf.com/2018/11/how-to-install-and-configure-ssmtp-in.html
 # https://raspberry-projects.com/pi/software_utilities/email/ssmtp-to-send-emails
+
+# See this for permanently adding an item to PATH
+# https://stackabuse.com/how-to-permanently-set-path-in-linux/
