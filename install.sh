@@ -3,14 +3,15 @@ loc=$(pwd)
 sudo apt install python3 python3-pip firefox ssmtp mailutils -y
 pip3 install selenium==4.0.0
 tar xzvf geckodriver*
-mkdir ~/geckodriver
-mv geckodriver* ~/geckodriver/
-cd ~/geckodriver
-export PATH=$PATH:$(pwd)
+mkdir $HOME/geckodriver
+mv geckodriver* $HOME/geckodriver/
+cd $HOME/geckodriver
+echo "PATH=$PATH:$HOME/geckodriver" >> $HOME/.bash_profile
+echo "export PATH" >> $HOME/.bash_profile
 cd $loc
 sudo mv gpubot /usr/bin/
-mkdir ~/PythonProjects
-mv bot.py ~/PythonProjects
+mkdir $HOME/PythonProjects
+mv bot.py $HOME/PythonProjects
 
 # TODO:
 #   set up SSMTP in a secure way
