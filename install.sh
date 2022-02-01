@@ -1,5 +1,9 @@
 #!/bin/bash
 loc=$(pwd)
+sudo add-apt-repository universe
+sudo apt full-upgrade -y
+sudo apt update -y 
+sudo apt autoremove -y
 sudo apt install python3 python3-pip firefox ssmtp mailutils -y
 pip3 install selenium==4.0.0
 tar xzvf geckodriver*
