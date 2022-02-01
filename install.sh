@@ -16,6 +16,16 @@ sudo mv gpubot /usr/bin/
 mkdir $HOME/PythonProjects
 mv bot.py $HOME/PythonProjects
 
+sudo echo "root=postmaster" >> /etc/ssmtp/ssmtp.conf
+sudo echo "mailhub=smtp.gmail.com:587" >> /etc/ssmtp/ssmtp.conf
+sudo echo "hostname=default-user-name" >> /etc/ssmtp/ssmtp.conf
+sudo echo "AuthUser=AGmailUserName@gmail.com" >> /etc/ssmtp/ssmtp.conf
+sudo echo "AuthPass=TheGmailPassword" >> /etc/ssmtp/ssmtp.conf
+sudo echo "FromLineOverride=YES" >> /etc/ssmtp/ssmtp.conf
+sudo echo "UseSTARTTLS=YES" >> /etc/ssmtp/ssmtp.conf
+
+sudo nano /etc/ssmtp/ssmtp.conf
+
 # TODO:
 #   set up SSMTP in a secure way
 #   add Geckodriver to PATH
