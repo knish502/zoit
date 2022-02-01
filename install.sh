@@ -16,13 +16,13 @@ sudo mv gpubot /usr/bin/
 mkdir $HOME/PythonProjects
 mv bot.py $HOME/PythonProjects
 
-sudo echo "root=postmaster" >> /etc/ssmtp/ssmtp.conf
-sudo echo "mailhub=smtp.gmail.com:587" >> /etc/ssmtp/ssmtp.conf
-sudo echo "hostname=default-user-name" >> /etc/ssmtp/ssmtp.conf
-sudo echo "AuthUser=AGmailUserName@gmail.com" >> /etc/ssmtp/ssmtp.conf
-sudo echo "AuthPass=TheGmailPassword" >> /etc/ssmtp/ssmtp.conf
-sudo echo "FromLineOverride=YES" >> /etc/ssmtp/ssmtp.conf
-sudo echo "UseSTARTTLS=YES" >> /etc/ssmtp/ssmtp.conf
+echo "root=postmaster" | sudo tee -a /etc/ssmtp/ssmtp.conf
+echo "mailhub=smtp.gmail.com:587" | sudo tee -a /etc/ssmtp/ssmtp.conf
+echo "hostname=default-user-name" | sudo tee -a /etc/ssmtp/ssmtp.conf
+echo "AuthUser=AGmailUserName@gmail.com" | sudo tee -a /etc/ssmtp/ssmtp.conf
+echo "AuthPass=TheGmailPassword" | sudo tee -a /etc/ssmtp/ssmtp.conf
+echo "FromLineOverride=YES" | sudo tee -a /etc/ssmtp/ssmtp.conf
+echo "UseSTARTTLS=YES" | sudo tee -a /etc/ssmtp/ssmtp.conf
 
 sudo nano /etc/ssmtp/ssmtp.conf
 
