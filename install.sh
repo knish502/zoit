@@ -10,8 +10,7 @@ tar xzvf geckodriver*
 mkdir $HOME/geckodriver
 mv geckodriver* $HOME/geckodriver/
 cd $HOME/geckodriver
-echo "PATH=$PATH:$HOME/geckodriver" >> $HOME/.bash_profile
-echo "export PATH" >> $HOME/.bash_profile
+echo "export PATH=$PATH:$HOME/geckodriver" >> $HOME/.bashrc
 cd $loc
 sudo mv gpubot /usr/bin/
 mkdir $HOME/PythonProjects
