@@ -1,6 +1,6 @@
 #!/bin/bash
 loc=$(pwd)
-sudo add-apt-repository universe
+sudo add-apt-repository universe -y
 sudo apt full-upgrade -y
 sudo apt update -y 
 sudo apt autoremove -y
