@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
 import os
 import datetime
@@ -23,7 +24,7 @@ class Bot:
         driver.get(self.url)
         #assert "Python" in driver.title
         elemName = "fulfillment-add-to-cart-button"
-        elem= driver.find_element_by_class_name(elemName)
+        elem = driver.find_element(By.CLASS_NAME, elemName)
         print(datetime.datetime.now(), "Found button!")
         try:
             elem = driver.find_element("xpath", "//*[text()='Sold Out']")
