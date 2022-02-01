@@ -16,7 +16,7 @@ sudo mv gpubot /usr/bin/
 mkdir $HOME/PythonProjects
 mv bot.py $HOME/PythonProjects
 
-echo "root=postmaster" | sudo tee -a /etc/ssmtp/ssmtp.conf
+echo "root=postmaster" | sudo tee /etc/ssmtp/ssmtp.conf
 echo "mailhub=smtp.gmail.com:587" | sudo tee -a /etc/ssmtp/ssmtp.conf
 echo "hostname=default-user-name" | sudo tee -a /etc/ssmtp/ssmtp.conf
 echo "AuthUser=AGmailUserName@gmail.com" | sudo tee -a /etc/ssmtp/ssmtp.conf
