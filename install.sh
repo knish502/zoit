@@ -4,7 +4,7 @@ sudo add-apt-repository universe -y
 sudo apt full-upgrade -y
 sudo apt update -y 
 sudo apt autoremove -y
-sudo apt install python3 python3-pip firefox ssmtp mailutils gedit -y
+sudo apt install python3 python3-pip firefox ssmtp mailutils gedit-common gedit -y
 pip3 install selenium==4.0.0
 tar xzvf geckodriver*
 mkdir $HOME/geckodriver
