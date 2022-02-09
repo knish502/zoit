@@ -24,7 +24,7 @@ echo "AuthPass=TheGmailPassword" | sudo tee -a /etc/ssmtp/ssmtp.conf
 echo "FromLineOverride=YES" | sudo tee -a /etc/ssmtp/ssmtp.conf
 echo "UseSTARTTLS=YES" | sudo tee -a /etc/ssmtp/ssmtp.conf
 
-sudo nano /etc/ssmtp/ssmtp.conf
+sudo gedit /etc/ssmtp/ssmtp.conf
 
 # TODO:
 #   set up SSMTP in a secure way
