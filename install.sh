@@ -1,5 +1,6 @@
 #!/bin/bash
 loc=$(pwd)
+sudo apt install software-properties-common -y
 sudo add-apt-repository universe -y
 sudo apt full-upgrade -y
 sudo apt update -y 
